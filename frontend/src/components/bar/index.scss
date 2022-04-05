@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+.u-bar {
+    position: relative;
+
+    .u-box {
+        padding: 2px;
+    }
+
+    .process-wrapper {
+        padding: 4px;
+        background: #001826;
+        @include size;
+        @include flex(row, flex-start, center);
+
+        .add-btn {
+            cursor: pointer;
+            margin-left: 4px;
+            padding-top: 4px;
+            font-size: 0.36rem;
+            @include flex(row, center, center);
+            @include size(calc(var(--boxHeight) - 8px), 100%);
+            background: #FFB800;
+            color: #001826;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        .process {
+            flex: 1;
+            cursor: pointer;
+            position: relative;
+            @include size(0, 100%);
+            @include flex(row, flex-start, center);
+
+            .block {
+                background: var(--barColor);
+                @include size(calc((100% - (4px * (var(--maxStep) - 1))) / var(--maxStep)), 100%);
+                margin-left: 4px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+
+            &:hover {
+                .mask, .text {
+                    visibility: visible;
+                }
+            }
+
+            .mask {
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: calc(100% / var(--maxStep) * var(--step));
+                height: 100%;
+                background: var(--barColor);
+                visibility: hidden;
+            }
+
+            .text {
+                top: 0;
+                left: 0;
+                position: absolute;
+                @include size;
+                padding-left: calc(var(--boxHeight) / 2 - 4px);
+                color: #FFFFFF;
+                font-size: 0.16rem;
+                line-height: calc(var(--boxHeight) - 8px);
+                visibility: hidden;
+            }
+        }
+    }
+
+    .label-wrapper {
+        top: calc(0px - var(--labelSize) / 2);
+        left: calc(0px - var(--labelSize) / 2);
+        position: absolute;
+        color: var(--barColor);
+        font-size: calc(var(--labelSize) / 2);
+    }
+}

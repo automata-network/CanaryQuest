@@ -1,0 +1,79 @@
+<div class="v-login" @click.stop="onStartClick">
+    <vue-recaptcha ref="recaptcha"
+                   recaptchaHost="www.recaptcha.net"
+                   load-recaptcha-script
+                   @verify="onVerify"
+                   size="invisible"
+                   :sitekey="siteKey">
+    </vue-recaptcha>
+
+    <div class="game-title"></div>
+    <div class="company">@2021 ContextFree, prod. by Automata Network.</div>
+    <div class="tips">Click anywhere to start</div>
+
+    <u-modal class="login-modal" :visible.sync="showLogin" @click.native.stop>
+        <u-box class="wrapper" :width="remToPx(6.65)" :height="remToPx(4.2)">
+            <u-box class="title" :width="remToPx(2.3)" :height="remToPx(0.34)" border-width="3px">
+                HERO INFORMATION
+            </u-box>
+            <div class="label">ContextFree Account:</div>
+            <u-box :width="remToPx(5.7)" :height="remToPx(0.48)" border-width="3px">
+                <i-input placeholder="eg. atfGsVwsX9xG53aToqnRkZWgwwp3U1gc7cpDKs1GxKn8Fn72N" v-model="account" :border="false"/>
+            </u-box>
+            <div class="label">Game Password:</div>
+            <u-box :width="remToPx(5.7)" :height="remToPx(0.48)" border-width="3px">
+                <i-input v-model="password" type="password" :border="false"/>
+            </u-box>
+            <div class="divider"></div>
+            <u-box class="button"
+                   :loading="loading"
+                   :width="remToPx(5.7)"
+                   :height="remToPx(0.42)"
+                   border-width="3px"
+                   border-color="#975B00"
+                   box-bg-color="#FFD9A0"
+                   content-bg-color="#DF8E15"
+                   @click.native="onLoginClick">
+                <div class="text">LOG INTO MY ADVENTURE DASHBOARD</div>
+            </u-box>
+        </u-box>
+    </u-modal>
+
+    <u-modal class="character-modal" :visible.sync="showCharacter" @click.native.stop>
+        <u-box class="wrapper" :width="remToPx(6.65)" :height="remToPx(4.98)">
+            <u-box class="title" :width="remToPx(2.14)" :height="remToPx(0.34)" border-width="3px">
+                CREATE YOUR HERO
+            </u-box>
+            <div class="label">Hero's Name: <span style="color: #ACACAC">(max. 20 characters)</span></div>
+            <u-box :width="remToPx(5.7)" :height="remToPx(0.48)" border-width="3px">
+                <i-input v-model="nickname" :border="false" maxlength="20"/>
+            </u-box>
+            <div class="label">Hero's Avatar:</div>
+            <div class="avatar-list">
+                <u-box class="avatar"
+                       v-for="i in 5"
+                       :key="`avatar-${i}`"
+                       @click.native="character = i"
+                       :width="remToPx(0.95)"
+                       :height="remToPx(0.95)"
+                       :border-color="character === i ? '#DF8E15' : '#FFFFFF'"
+                       border-width="3px">
+                    <img class="avatar-img" :src="`/static/imgs/avatar/${i}-1.png`">
+                </u-box>
+            </div>
+            <div style="color: #ACACAC">{{ characterDesc[character - 1] }}</div>
+            <div class="divider"></div>
+            <u-box class="button"
+                   :loading="loading"
+                   :width="remToPx(5.7)"
+                   :height="remToPx(0.42)"
+                   border-width="3px"
+                   border-color="#975B00"
+                   box-bg-color="#FFD9A0"
+                   content-bg-color="#DF8E15"
+                   @click.native="onCreateClick">
+                <div class="text">LOG IN AND START MY ADVENTURE</div>
+            </u-box>
+        </u-box>
+    </u-modal>
+</div>

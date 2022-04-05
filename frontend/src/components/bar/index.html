@@ -1,0 +1,23 @@
+<div class="u-bar" :style="{
+    '--boxWidth': width,
+    '--boxHeight': height,
+    '--labelSize': labelSize,
+    '--barColor': color,
+    '--maxStep': maxStep,
+    '--step': step,
+}">
+    <u-box :width="width" :height="height" border-width="4px">
+        <div class="process-wrapper">
+            <div class="process">
+                <div class="block" v-for="i in step" :key="i"></div>
+                <div class="mask"></div>
+                <div class="text">{{hoverText}}</div>
+            </div>
+            <div class="add-btn" v-if="showAdd" @click="onAddClick">+</div>
+        </div>
+
+        <u-box v-if="showLabel" class="label-wrapper" :width="labelSize" :height="labelSize" border-width="3px" :boxBgColor="color">
+            {{label}}
+        </u-box>
+    </u-box>
+</div>

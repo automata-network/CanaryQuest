@@ -1,0 +1,33 @@
+{
+    "initPoints": 2,
+    "1": {
+        "type": "knight",
+        "strength": 2,
+        "intellect": 0,
+        "dexterity": 0
+    },
+    "2": {
+        "type": "druid",
+        "strength": 1,
+        "intellect": 1,
+        "dexterity": 0
+    },
+    "3": {
+        "type": "assassin",
+        "strength": 0,
+        "intellect": 1,
+        "dexterity": 1
+    },
+    "4": {
+        "type": "wizard",
+        "strength": 0,
+        "intellect": 2,
+        "dexterity": 0
+    },
+    "5": {
+        "type": "ranger",
+        "strength": 0,
+        "intellect": 0,
+        "dexterity": 2
+    }
+}

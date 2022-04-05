@@ -1,0 +1,51 @@
+<article class="v-container" :style="isMobile ? 'min-width: unset; min-height: unset' : ''">
+    <section class="v-page">
+        <div v-if="isMobile" class="mobile-page">
+            <div class="logo"></div>
+            <div class="tips">Mobile version is not supported yet</div>
+            <div class="tips">Please visit this site using your computer</div>
+        </div>
+        <transition v-else name="fade" mode="out-in">
+            <keep-alive :include="cachePageList">
+                <router-view></router-view>
+            </keep-alive>
+        </transition>
+        <transition name="slide-in">
+            <u-box v-if="showError"
+                   class="error"
+                   :width="remToPx(6.65)"
+                   :height="remToPx(1.24)"
+                   box-bg-color="#D90000"
+                   content-bg-color="#400000">
+                <u-box class="title" :width="remToPx(2.62)" :height="remToPx(0.34)"
+                       box-bg-color="#D90000"
+                       content-bg-color="#400000"
+                       border-width="3px">
+                    AN ERROR HAS APPEARED
+                </u-box>
+                <div class="row">
+                    <div class="warning-icon"></div>
+                    <div class="details">{{ errorMessage }}</div>
+                </div>
+            </u-box>
+        </transition>
+        <transition name="slide-in">
+            <u-box v-if="showSuccess"
+                   class="success"
+                   :width="remToPx(2.62)"
+                   :height="remToPx(0.46)"
+                   box-bg-color="#88FF94"
+                   content-bg-color="#00A911"
+                   border-color="#0B7501"
+                   border-width="3px">
+                <div class="row">
+                    <div class="details" style="color: #FFFFFF">{{ successMessage }}</div>
+                </div>
+            </u-box>
+        </transition>
+    </section>
+
+    <u-modal class="big-img" :visible.sync="showImgModal" type="fade">
+        <img class="img" :src="imgUrl">
+    </u-modal>
+</article>

@@ -1,0 +1,343 @@
+<article class="v-quests">
+    <main>
+        <section class="character">
+            <u-box class="wrapper" :width="remToPx(3.69)" :height="remToPx(4.07)">
+                <u-box class="title" :width="remToPx(1.64)" :height="remToPx(0.34)" border-width="3px">
+                    MY CHARACTER
+                </u-box>
+                <u-box class="title account" :width="remToPx(1.14)" :height="remToPx(0.34)" border-width="3px">
+                    <div class="account-text" title="click to copy" @click="copyText(user.account)">
+                        {{ shortenAddress(user.account) }}
+                    </div>
+                </u-box>
+                <u-box class="avatar" :width="remToPx(2.94)" :height="remToPx(1.64)">
+                    <img class="img"
+                         :src="`/static/imgs/avatar/${user.character}-${Math.min(5, Math.ceil(user.level / 2))}.png`">
+                </u-box>
+                <div class="info">
+                    <div class="name">{{ user.nickname }}&nbsp;</div>
+                    <div>(Lvl. {{ user.level }})</div>
+                </div>
+                <div class="row">
+                    <i-poptip trigger="hover"
+                              word-wrap
+                              width="250"
+                              popper-class="pop-tip"
+                              content="Each new level reached unlocks one skill point, which can be spent to enhance STR, INT or DEX">
+                        <span class="xp">XP</span>
+                    </i-poptip>
+                    <u-bar :width="remToPx(2.45)"
+                           :height="remToPx(0.32)"
+                           :hover-text="userInfo.xpText"
+                           color="#21A300"
+                           :step="userInfo.xpStep">
+                    </u-bar>
+                </div>
+                <div class="row">
+                    <i-poptip trigger="hover"
+                              word-wrap
+                              width="250"
+                              popper-class="pop-tip"
+                              content="The amount of energy the player has, which is required to complete quests">
+                        <span class="mp">MP</span>
+                    </i-poptip>
+                    <u-bar :width="remToPx(2.45)"
+                           :height="remToPx(0.32)"
+                           :hover-text="userInfo.mpText"
+                           color="#08AFE4"
+                           :step="userInfo.mpStep">
+                    </u-bar>
+                </div>
+            </u-box>
+        </section>
+
+        <section class="how-to-play">
+            <u-box class="wrapper" :width="remToPx(3.69)" :height="remToPx(4.07)">
+                <u-box class="title" :width="remToPx(1.64)" :height="remToPx(0.34)" border-width="3px">
+                    HOW TO PLAY
+                </u-box>
+                <p><span style="color: #FFDD85">1)</span> Choose from 5 unique character class to create your own Hero</p>
+                <p><span style="color: #FFDD85">2)</span> Level up by completing quests and allocating points into character attributes</p>
+                <p>
+                    <i-poptip trigger="hover"
+                              word-wrap
+                              width="250"
+                              placement="top-start"
+                              popper-class="pop-tip"
+                              content="Experience gained increases by 5% with each skill point">
+                        <span style="cursor: pointer"><span style="color: #FFA0A0">STRENGTH</span> = +5% EXP gain<br/></span>
+                    </i-poptip>
+                    <i-poptip trigger="hover"
+                              word-wrap
+                              width="250"
+                              placement="top-start"
+                              popper-class="pop-tip"
+                              content="Gain an additional MP with each skill point">
+                        <span style="cursor: pointer"><span style="color: #94E5FF">INTELLECT</span> = +1 MP limit<br/></span>
+                    </i-poptip>
+                    <i-poptip trigger="hover"
+                              word-wrap
+                              width="250"
+                              placement="top-start"
+                              popper-class="pop-tip"
+                              content="Chances of double EXP increases by 5% with each skill point">
+                        <span style="cursor: pointer"><span style="color: #D898FF">DEXTERITY</span> = +5% for Double EXP<br/></span>
+                    </i-poptip>
+                </p>
+                <p><span style="color: #FFDD85">3)</span> Earn real-world loot and glory by climbing up the ranks on the leaderboard</p>
+                <div class="divider"></div>
+                <p>This game was created by <a href="https://www.ata.network/" target="_blank" class="link">Automata</a>
+                </p>
+            </u-box>
+        </section>
+
+        <section class="stats">
+            <u-box class="wrapper" :width="remToPx(10.89)" :height="remToPx(3.26)">
+                <u-box class="title" :width="remToPx(1.25)" :height="remToPx(0.34)" border-width="3px">
+                    MY STATS
+                </u-box>
+                <u-box v-if="user.remainPoints" class="points" box-bg-color="#FFB800"
+                       :width="remToPx(0.34 * ((user.remainPoints.toString().length - 1) * 0.5 + 1))"
+                       :height="remToPx(0.34)"
+                       border-width="3px">
+                    +{{ user.remainPoints }}
+                </u-box>
+                <div class="row" v-for="key in Object.keys(userAbilities)" :key="key">
+                    <div class="label"
+                         :style="{color: userAbilities[key].labelColor, borderColor: userAbilities[key].labelColor}">
+                        {{ userAbilities[key].title }}
+                    </div>
+                    <u-bar :width="remToPx(7.44)"
+                           :height="remToPx(0.46)"
+                           show-add
+                           @on-add-click="onAddClick(key)"
+                           :show-label="userAbilities[key].showLabel"
+                           :label="userAbilities[key].label"
+                           :max-step="userAbilities[key].maxStep"
+                           :step="userAbilities[key].step"
+                           :hover-text="userAbilities[key].hoverText"
+                           :color="userAbilities[key].color">
+                    </u-bar>
+                </div>
+            </u-box>
+        </section>
+
+        <section class="tools">
+            <u-box :width="remToPx(0.69)" :height="remToPx(0.61)">
+                <i-poptip trigger="hover"
+                          word-wrap
+                          width="250"
+                          style="height: 0.38rem"
+                          popper-class="pop-tip"
+                          content="The fate you wield is solely in your hands">
+                    <div class="trophy" @click="onRankClick"></div>
+                </i-poptip>
+            </u-box>
+            <u-box :width="remToPx(0.69)" :height="remToPx(0.61)">
+                <i-poptip trigger="hover"
+                          word-wrap
+                          width="250"
+                          style="height: 0.38rem"
+                          popper-class="pop-tip"
+                          content="Invite those who will join us to defend against the Dark Forest">
+                    <div class="share" @click="onShareClick"></div>
+                </i-poptip>
+            </u-box>
+            <u-box :width="remToPx(0.69)" :height="remToPx(0.61)">
+                <i-poptip trigger="hover"
+                          word-wrap
+                          width="250"
+                          style="height: 0.34rem"
+                          popper-class="pop-tip"
+                          content="Illuminate the journey with knowledge and clarity">
+                    <div class="question" @click="onFAQClick"></div>
+                </i-poptip>
+            </u-box>
+            <u-box :width="remToPx(0.69)" :height="remToPx(0.61)">
+                <i-poptip trigger="hover"
+                          word-wrap
+                          width="250"
+                          style="height: 0.32rem"
+                          popper-class="pop-tip"
+                          content="Nothing is as fleeting as goodbye">
+                    <div class="logout" @click="onLogoutClick"></div>
+                </i-poptip>
+            </u-box>
+        </section>
+
+        <section class="tasks">
+            <u-card v-for="key in ['daily', 'random', 'raid']"
+                    :key="key"
+                    :type="key"
+                    :info="quests[key]"
+                    :completed="completed.includes(key)"
+                    @on-button-click="onQuestClick(key)">
+            </u-card>
+        </section>
+
+        <u-modal class="faq" :visible.sync="showFAQ" @click.native.stop>
+            <u-box class="wrapper" :width="remToPx(6.65)" :height="remToPx(4.89)">
+                <u-box class="title" :width="remToPx(0.7)" :height="remToPx(0.34)" border-width="3px">
+                    FAQ
+                </u-box>
+                <div class="details">
+                    <div class="sub-title">About this Project:</div>
+                    <div class="desc">Canary Quests are a part of the Canary Games, an incentivized competition to encourage real-world participation on Automata’s ContextFree. Chart a course back into the light as the sun sets in the Dark Forest - Fly!</div>
+                    <div class="sub-title">Frequently Asked Questions:</div>
+                    <template v-for="(item, index) in FAQ">
+                        <div class="question">{{ (index + 1) + ") " + item.question }}</div>
+                        <div class="answer">
+                            <span class="question">R: </span>
+                            <span v-html="item.answer"></span>
+                        </div>
+                    </template>
+                </div>
+            </u-box>
+        </u-modal>
+
+        <u-modal class="quest-detail" :visible.sync="showQuest" @click.native.stop>
+            <div class="quest-detail-wrapper">
+                <u-card :show-flip="false"
+                        :type="info.type"
+                        :info="info"
+                        @on-button-click="showQuest = false">
+                </u-card>
+                <u-box class="wrapper" :width="remToPx(6.65)" :height="remToPx(4.89)">
+                    <u-box class="title" :width="remToPx(1.68)" :height="remToPx(0.34)" border-width="3px">
+                        QUEST DETAILS
+                    </u-box>
+                    <div class="details">
+                        <template v-if="info.type === 'raid'">
+                            <div class="sub-title">Raid Boss Stats:</div>
+                            <div v-if="info.checker === 'crossChainTransfer'" class="boss-stats">
+                                <div class="hp">HP: {{ boss.hp }} / {{ boss.totalHp }}</div>
+                                <div>&nbsp;/&nbsp;</div>
+                                <div class="dmg">DMG DEALT: {{ boss.damage }}</div>
+                                <div>&nbsp;/&nbsp;</div>
+                                <div class="mp">MP SPENT: {{ boss.mpUsed }}</div>
+                            </div>
+                            <div v-else-if="info.checker === 'proposal'" class="boss-stats">
+                                <div class="dmg">ATTACK COUNT: {{ 15 - info.attackCount }} /
+                                    {{ 15 }}
+                                </div>
+                            </div>
+                        </template>
+                        <template v-if="info.endTime">
+                            <div class="sub-title">Quest Availability:</div>
+                            <div class="answer">Time Remaining: <span class="question">{{ questEndTime }}</span></div>
+                        </template>
+                        <div class="sub-title">About this Quest:</div>
+                        <template v-for="item in info.about">
+                            <div class="desc">
+                                <span v-html="item"></span>
+                            </div>
+                        </template>
+                        <div class="sub-title">To Complete This Quest:</div>
+                        <template v-for="(item, index) in info.steps">
+                            <div class="answer"><span class="question">{{ index + 1 + ") " }}</span>
+                                <span v-html="item"></span>
+                            </div>
+                        </template>
+                    </div>
+                </u-box>
+            </div>
+        </u-modal>
+
+        <u-modal class="ranking-list" :visible.sync="showRank" @click.native.stop>
+            <u-box class="wrapper" :width="remToPx(8.11)" :height="remToPx(4.89)" :loading="loading">
+                <div class="list" v-if="rankList.length">
+                    <div :class="`row rank-${index + 1}`" v-for="(item, index) in rankList"
+                         :key="`${item.name + index}`">
+                        <div class="index">{{ index + 1 + "°" }}</div>
+                        <div class="user">
+                            <u-box :width="remToPx(0.4)" :height="remToPx(0.4)" border-width="3px"
+                                   :border-color="rankAvatarColor(index)">
+                                <img class="avatar"
+                                     :src="item.character ?
+                                           `/static/imgs/avatar/${item.character}-${Math.min(5, Math.ceil(item.level / 2))}-s.png` :
+                                           '/static/imgs/avatar/0-s.png'">
+                            </u-box>
+                            <div class="name">{{ item.name || item.account }}</div>
+                        </div>
+                        <div class="level">Lvl. {{ item.level }}</div>
+                        <div class="exp">{{ item.exp }} EXP</div>
+                    </div>
+                </div>
+                <div v-else>NO DATA</div>
+            </u-box>
+            <u-box class="title" :width="remToPx(1.68)" :height="remToPx(0.34)" border-width="3px">
+                EXP RANKINGS
+            </u-box>
+        </u-modal>
+
+        <u-modal class="shared-info" :visible.sync="showSharedInfo" @click.native.stop>
+            <u-box class="wrapper" :width="remToPx(3.05)" :height="remToPx(1.04)">
+                <u-box class="title" :width="remToPx(1.64)" :height="remToPx(0.34)" border-width="3px">
+                    SUCCESS
+                </u-box>
+                <div class="info">{{ sharedResult }}</div>
+            </u-box>
+        </u-modal>
+
+        <u-modal class="confirm-modal" :visible.sync="showConfirm" @click.native.stop>
+            <u-box class="wrapper" :width="remToPx(3.05)" :height="remToPx(1.04)">
+                <u-box class="title" :width="remToPx(1.64)" :height="remToPx(0.34)" border-width="3px">
+                    {{ confirmTitle }}
+                </u-box>
+                <div class="row">
+                    <u-box class="confirm-btn"
+                           :width="remToPx(1.14)"
+                           :height="remToPx(0.34)"
+                           border-width="3px"
+                           border-color="#0B7501"
+                           box-bg-color="#88FF94"
+                           content-bg-color="#00A911"
+                           @click.native="confirmFunc">
+                        CONFIRM
+                    </u-box>
+                    <u-box class="confirm-btn"
+                           :width="remToPx(1.14)"
+                           :height="remToPx(0.34)"
+                           border-width="3px"
+                           border-color="#970000"
+                           box-bg-color="#FFA0A0"
+                           content-bg-color="#FF3333"
+                           @click.native="showConfirm = false">
+                        CANCEL
+                    </u-box>
+                </div>
+            </u-box>
+        </u-modal>
+
+        <u-modal class="winner-form-modal" :visible.sync="showForm" :mask-close="false" @click.native.stop>
+            <u-box class="wrapper" :width="remToPx(6.65)" :height="remToPx(4.5)">
+                <u-box class="title" :width="remToPx(2.3)" :height="remToPx(0.34)" border-width="3px">
+                    CONGRATULATIONS
+                </u-box>
+                <div style="color: #ACACAC">You've won this game!</div>
+                <div class="label">BSC Account:</div>
+                <u-box :width="remToPx(5.7)" :height="remToPx(0.48)" border-width="3px">
+                    <i-input placeholder="eg. 0x8097c3C354652CB1EEed3E5B65fBa2576470678A" v-model="winner.bsc_account" :border="false"/>
+                </u-box>
+                <div class="label">Email:</div>
+                <u-box :width="remToPx(5.7)" :height="remToPx(0.48)" border-width="3px">
+                    <i-input v-model="winner.email" type="email" :border="false"/>
+                </u-box>
+                <div class="divider"></div>
+                <u-box class="button"
+                       :loading="loading"
+                       :width="remToPx(5.7)"
+                       :height="remToPx(0.42)"
+                       border-width="3px"
+                       border-color="#975B00"
+                       box-bg-color="#FFD9A0"
+                       content-bg-color="#DF8E15"
+                       @click.native="onFormSubmitClick">
+                    <div class="text">SUBMIT</div>
+                </u-box>
+            </u-box>
+        </u-modal>
+    </main>
+
+<!--    <section ref="carousel" class="exp-carousel"></section>-->
+</article>

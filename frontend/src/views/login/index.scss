@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+.grecaptcha-badge {
+    display: none !important;
+}
+
+.v-login {
+    @include size;
+    cursor: pointer;
+    position: relative;
+    @include flex(row, center, center);
+
+    .game-title {
+        @include absolute(0, 0, 0, 0);
+        @include bg-img("/static/imgs/title.png");
+    }
+
+    .company {
+        font-weight: 500;
+        font-size: 0.5rem;
+        bottom: 0.6rem;
+        position: absolute;
+        animation: fade 5s cubic-bezier(0.7, 0, 0.3, 1) infinite alternate-reverse both;
+    }
+
+    .tips {
+        font-weight: 500;
+        font-size: 0.5rem;
+        bottom: 0.6rem;
+        position: absolute;
+        animation: fade 5s cubic-bezier(0.7, 0, 0.3, 1) infinite alternate both;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @mixin normal-wrapper {
+        & > .content {
+            font-weight: 500;
+            font-size: 0.24rem;
+            padding: 0.38rem 0.3rem 0.3rem 0.3rem;
+            @include flex(column, space-between, center);
+        }
+
+        .title {
+            position: absolute;
+            top: -0.19rem;
+            font-size: 0.18rem;
+            font-weight: normal;
+
+            & > .content {
+                padding-top: 0.04rem;
+            }
+        }
+    }
+
+    .button {
+        cursor: pointer;
+
+        .text {
+            font-size: 0.18rem;
+            padding-top: 0.04rem;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .divider {
+        width: 5.7rem;
+        border-bottom: 2px solid #6D7C84;
+    }
+
+    .label {
+        padding-top: 0.04rem;
+        line-height: 0.24rem;
+        width: 100%;
+        text-align: left;
+    }
+
+    .login-modal, .character-modal {
+        cursor: default;
+
+        .wrapper {
+            @include normal-wrapper;
+            & > .content {
+                padding: 0.38rem;
+            }
+
+            .avatar-list {
+                width: 100%;
+                @include flex(row, space-between, center);
+
+                .avatar {
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+
+                .avatar-img {
+                    @include size;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

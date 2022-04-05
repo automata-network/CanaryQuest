@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+.v-container {
+    @include size;
+    min-width: 1280px;
+    min-height: 9.5rem;
+    position: relative;
+    @include flex(column, flex-start, flex-start);
+
+    .v-page {
+        flex: 1;
+        width: 100%;
+
+        .mobile-page {
+            @include size;
+            position: relative;
+            @include flex(column, center, center);
+
+            .logo {
+                @include size(100vw, 56.25vw);
+                @include bg-img("/static/imgs/title.png");
+            }
+
+            .tips {
+                text-align: center;
+                font-size: 5vw;
+                margin-bottom: 2vw;
+            }
+        }
+
+        @include size;
+        color: #FFFFFF;
+        font-family: "Pixellari";
+        position: relative;
+        @include bg-img("/static/imgs/bg.png");
+        background-size: cover;
+
+        &:before {
+            content: "";
+            @include absolute(0, 0, 0, 0);
+            background: rgba(0, 18, 28, 0.5);
+        }
+
+        &:after {
+            content: "";
+            @include absolute(0, 0, 0, 0);
+            @include bg-img("/static/imgs/overlay.png");
+            background-repeat: repeat;
+            background-size: 1920px 1080px;
+            pointer-events: none;
+        }
+
+        .error, .success {
+            position: fixed;
+            top: 0.3rem;
+            right: 0.2rem;
+            font-family: "Pixellari";
+
+            & > .content {
+                color: #B6B6B6;
+                font-weight: 500;
+                font-size: 0.18rem;
+                line-height: 0.2rem;
+                padding: 0.34rem 0.3rem 0.3rem 0.3rem;
+                @include flex(column, space-between, center);
+            }
+
+            .title {
+                color: #FFFFFF;
+                position: absolute;
+                top: -0.19rem;
+                font-size: 0.18rem;
+                font-weight: normal;
+
+                & > .content {
+                    padding-top: 0.04rem;
+                }
+            }
+
+            .row {
+                @include size;
+                @include flex(row, space-between, center);
+
+                .warning-icon {
+                    margin-right: 0.3rem;
+                    @include size(0.57rem, 0.53rem);
+                    @include bg-img("~@/assets/imgs/quests/warning.png");
+                }
+
+                .details {
+                    flex: 1;
+                    width: 0;
+                    text-align: left;
+                    padding-top: 0.04rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+
+        .success {
+            & > .content {
+                padding: 0 0.1rem;
+            }
+        }
+    }
+
+    .big-img {
+        @include absolute(0, 0, 0, 0);
+
+        .content {
+            width: 80%;
+
+            .img {
+                @include size;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.slide-in-enter, .slide-in-leave-to {
+    transform: translateX(1000px);
+    opacity: 0;
+}
+
+.slide-in-enter-to, .slide-in-leave {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.slide-in-enter-active, .slide-in-leave-active {
+    transition: all .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}

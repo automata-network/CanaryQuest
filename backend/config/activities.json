@@ -1,0 +1,1275 @@
+{
+    "version": "1.0",
+    "data": [
+        {
+            "id": "D96B0CF9E56FE5279525811BF37341204F3DE53C",
+            "type": "daily",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-14T00:00:00Z",
+            "startTime": "2022-02-14T00:00:00Z",
+            "endTime": "2022-02-27T22:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 12
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 1,
+                    "exactly": true
+                }
+            },
+            "title": "Under a Dark Sky",
+            "desc": "Yet may it be known that no man who comes to the Dark Forest shall escape unscathed, save for the enlightened and the bold who seek out to defeat the monsters.",
+            "about": [
+                "Transfer <b>exactly 1 CTX</b> on Automata’s ContextFree to earn 12 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 1 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7TU1uFzYaPimPjeoCBHK8J7Yxr8WoZqsa7iRGktGU3RU52bq')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-daily.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-daily.png')\">",
+                "Receive 12 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7TU1uFzYaPimPjeoCBHK8J7Yxr8WoZqsa7iRGktGU3RU52bq",
+            "avatar": "/static/avatar/6.png",
+            "btnText": "DEFEAT MONSTER (-1 MP)"
+        },
+        {
+            "id": "0A8D94349E7DE66E6FF6F0FFBE5B93F3EE6CD8BE",
+            "type": "raid",
+            "checker": "crossChainTransfer",
+            "appearTime": "2022-02-21T00:00:00Z",
+            "startTime": "2022-02-24T00:00:00Z",
+            "endTime": "2022-02-27T22:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 1,
+                    "unit": {
+                        "value": 1,
+                        "type": "dmg"
+                    }
+                }
+            },
+            "title": "The Eternal Battle",
+            "desc": "The horde of Specters that roam the forest in its darkest hour are an omen of disaster. The appearance of these ancient creatures foreshadows war and woe.",
+            "about": [
+                "The amount of EXP that can be earned depends on your character’s MP and the amount of CTX transferred from ContextFree to Ropsten Testnet. 1 MP is used up for 1 CTX attack, with 1 CTX = 100 damage. Players will not be able to attack if they have no MP left.",
+                "For example, a player with 10 MP who chooses to transfer 20 CTX will only be able to attack 10 times, causing a total damage of 10 x 100 = 1000.",
+                "Damage to the Specters are calculated by the total amount of damage caused by all players in-game, with Specters’ remaining HP updated in real-time. Specters are defeated once HP=0. Players will not receive EXP if the Specters are not killed by the end of the quest."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Set up your <a target='_blank' href='https://docs.ata.network/canarynet/userguide/setupwallet/'>ContextFree Network Wallet</a> with your game address.",
+                "Visit <a target='_blank' href='https://cf-bridge.ata.network/'>chain bridge</a>, select 'Native to ERC20', and transfer the desired amount of CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('0x9cf268462dE494444d4ad6c1F57a88f81b7dBB82')\">this address</span>. Learn more about using the Automata Token Bridge with our user <a target='_blank' href='https://docs.ata.network/canarynet/userguide/token-bridge/#transfer-native-token-to-erc20-token'>guide</a>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/native2erc.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/native2erc.png')\">",
+                "Each CTX causes 100 damage, and you will receive EXP rewards equal to the total amount of damage once the Specters have been defeated."
+            ],
+            "totalHp": 800000,
+            "targetAccount": "0x9cf268462dE494444d4ad6c1F57a88f81b7dBB82",
+            "avatar": "/static/avatar/8.png",
+            "btnText": "CHECK QUEST DETAILS"
+        },
+        {
+            "id": "02BAA535FF87D0BD5FCB77D0E9454F657F7D2257",
+            "type": "raid",
+            "checker": "proposal",
+            "appearTime": "2022-02-13T00:00:00Z",
+            "startTime": "2022-02-18T00:00:00Z",
+            "endTime": "2022-02-20T23:59:59Z",
+            "reward": {
+                "xp": {
+                    "value": 5000
+                }
+            },
+            "title": "Revealing the Unseen",
+            "desc": "At the heart of the Forest lies the Leshen. What makes these highly intelligent creatures truly dangerous is their mastery of deception, beguilement and disorientation.",
+            "about": [
+                "Submit a proposal and vote for it to pass by organizing your own team consisting of <b>at least</b> three members. To create a proposal, you’ll need to have <b>at least 30 CTX</b> in your account. Pool resources to better your chances.",
+                "It will take a few minutes for the proposal to be listed once it has been submitted successfully. Get together with team members to cast votes <b>within 3 hours</b> before time’s up. Once your proposal passes, it will take approximately 15 minutes for it to be enacted and for EXP rewards to be distributed.",
+                "Each team member receives EXP points only for their first successful attempt. To illustrate, Player 1’s address is submitted under 2 different teams’ proposals, Team A and Team B. Given that Team A’s proposal is approved first under the <a target='_blank' href='https://wiki.polkadot.network/docs/learn-governance'>governance mechanism</a>, Player 1 receives EXP points from Team A and is not eligible for any subsequent rewards from Team B’s proposal, if it is passed.",
+                "Total EXP will be shared equally among the final number of team members."
+            ],
+            "steps": [
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network.",
+                "Select 'Democracy' under the Governance tab, and click on 'Submit preimage'. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/proposal-1.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/proposal-1.png')\">",
+                "Select “game” under Propose. Account addresses of all members in the team must be added as “participants”, including your own. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/proposal-2.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/proposal-2.png')\">",
+                "Jot down your preimage hash and submit preimage. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/proposal-3.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/proposal-3.png')\">",
+                "Enter the preimage hash after selecting 'Submit Proposal'. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/proposal-4.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/proposal-4.png')\">"
+            ],
+            "totalAttackCount": 5,
+            "avatar": "/static/avatar/7.png",
+            "btnText": "CHECK QUEST DETAILS"
+        },
+        {
+            "id": "BEF65CFC5109889FA97C248A5E91D94084799749",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-13T00:00:00Z",
+            "startTime": "2022-02-14T08:00:00Z",
+            "endTime": "2022-02-14T11:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 30
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 2,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 2 CTX</b> on Automata’s ContextFree to earn 30 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 2 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 30 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/4.png",
+            "btnText": "DEFEAT MONSTER (-2 MP)"
+        },
+        {
+            "id": "09D65AF48EF4130241E3D8F3423B03E77DFE83F2",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-14T11:00:01Z",
+            "startTime": "2022-02-14T13:00:00Z",
+            "endTime": "2022-02-14T17:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 33
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 4,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 4 CTX</b> on Automata’s ContextFree to earn 33 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 4 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 33 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/1.png",
+            "btnText": "DEFEAT MONSTER (-4 MP)"
+        },
+        {
+            "id": "027F1675245F638FB71752E0AFB4EB2F904CE54B",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-14T17:00:01Z",
+            "startTime": "2022-02-14T20:00:00Z",
+            "endTime": "2022-02-14T23:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 50
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 3,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 3 CTX</b> on Automata’s ContextFree to earn 50 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 3 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 50 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-3 MP)"
+        },
+        {
+            "id": "54CB61221640114A72F74AC3131D24441216669A",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-14T23:00:01Z",
+            "startTime": "2022-02-15T07:00:00Z",
+            "endTime": "2022-02-15T09:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 30
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 3,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 3 CTX</b> on Automata’s ContextFree to earn 30 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 3 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 30 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-3 MP)"
+        },
+        {
+            "id": "71AD113DFC3BE4301BC6211124D7947CF6886B1F",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-15T09:00:01Z",
+            "startTime": "2022-02-15T11:00:00Z",
+            "endTime": "2022-02-15T18:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 13
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 5,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 5 CTX</b> on Automata’s ContextFree to earn 13 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 5 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 13 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-5 MP)"
+        },
+        {
+            "id": "048A2BD5ED69705F54F963923C995B487339B41D",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-15T18:00:01Z",
+            "startTime": "2022-02-15T19:00:00Z",
+            "endTime": "2022-02-15T23:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 70
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 3,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 3 CTX</b> on Automata’s ContextFree to earn 70 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 3 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 70 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-3 MP)"
+        },
+        {
+            "id": "E5C31D6F98AE1F77947FD1EB1B4688B47B98C4F1",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-15T23:00:01Z",
+            "startTime": "2022-02-16T02:00:00Z",
+            "endTime": "2022-02-16T10:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 100
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 7,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 7 CTX</b> on Automata’s ContextFree to earn 100 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 7 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 100 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/5.png",
+            "btnText": "DEFEAT MONSTER (-7 MP)"
+        },
+        {
+            "id": "57A490E83C6B7B377C419E7B2C6AD4B89411D365",
+            "type": "random",
+            "checker": "crossChainTransfer",
+            "appearTime": "2022-02-16T10:00:01Z",
+            "startTime": "2022-02-16T11:00:00Z",
+            "endTime": "2022-02-16T14:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 0
+                },
+                "mp": {
+                    "value": 3
+                }
+            },
+            "cost": {
+                "token": {
+                    "value": 1,
+                    "exactly": true
+                }
+            },
+            "title": "Hope Burns Bright",
+            "desc": "Only those whose will is strong can find the path. Shine a light into the corners of the Forest which grows with every new area being discovered.",
+            "about": [
+                "Transfer <b>exactly 1 CTX</b> from Ropsten Testnet to ContextFree to earn 3 MP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the Ropsten Testnet. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png')\">",
+                "Set up your Metamask Wallet with your game address.",
+                "Visit <a target='_blank' href='https://cf-bridge.ata.network/'>chain bridge</a>, select 'ERC20 to Native', and transfer exactly 1 CTX to your Substrate address. Learn more about using the Automata Token Bridge with our user <a target='_blank' href='https://docs.ata.network/canarynet/userguide/token-bridge/#transfer-erc20-token-to-native-token'>guide</a>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/erc2native.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/erc2native.png')\">",
+                "Receive 3 MP once the transfer has been confirmed!"
+            ],
+            "avatar": "/static/avatar/4.png",
+            "btnText": "CHECK QUEST DETAILS"
+        },
+        {
+            "id": "B6E50E18582F099E1FF41F0DFDC23E4E4686786D",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-16T14:00:01Z",
+            "startTime": "2022-02-16T15:00:00Z",
+            "endTime": "2022-02-16T17:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 23
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 3,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 3 CTX</b> on Automata’s ContextFree to earn 23 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 3 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 23 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-3 MP)"
+        },
+        {
+            "id": "D2D49A56EFA12EB7A0681C84549CDB6FE174DCDA",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-16T17:00:01Z",
+            "startTime": "2022-02-16T21:00:00Z",
+            "endTime": "2022-02-16T23:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 50
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 4,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 4 CTX</b> on Automata’s ContextFree to earn 50 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 4 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 50 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-4 MP)"
+        },
+        {
+            "id": "E4C6AD81CE3685358FC77A056E7EE9E31F279D94",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-16T23:00:01Z",
+            "startTime": "2022-02-17T03:00:00Z",
+            "endTime": "2022-02-17T10:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 43
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 5,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 5 CTX</b> on Automata’s ContextFree to earn 43 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 5 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 43 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-5 MP)"
+        },
+        {
+            "id": "B6522C869544F143FC39064BEC1CF585206847EC",
+            "type": "random",
+            "checker": "crossChainTransfer",
+            "appearTime": "2022-02-17T10:00:01Z",
+            "startTime": "2022-02-17T11:00:00Z",
+            "endTime": "2022-02-17T15:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 0
+                },
+                "mp": {
+                    "value": 2
+                }
+            },
+            "cost": {
+                "token": {
+                    "value": 3,
+                    "exactly": true
+                }
+            },
+            "title": "Hope Burns Bright",
+            "desc": "Only those whose will is strong can find the path. Shine a light into the corners of the Forest which grows with every new area being discovered.",
+            "about": [
+                "Transfer <b>exactly 3 CTX</b> from Ropsten Testnet to ContextFree to earn 2 MP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the Ropsten Testnet. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png')\">",
+                "Set up your Metamask Wallet with your game address.",
+                "Visit <a target='_blank' href='https://cf-bridge.ata.network/'>chain bridge</a>, select 'ERC20 to Native', and transfer exactly 3 CTX to your Substrate address. Learn more about using the Automata Token Bridge with our user <a target='_blank' href='https://docs.ata.network/canarynet/userguide/token-bridge/#transfer-erc20-token-to-native-token'>guide</a>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/erc2native.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/erc2native.png')\">",
+                "Receive 2 MP once the transfer has been confirmed!"
+            ],
+            "avatar": "/static/avatar/4.png",
+            "btnText": "CHECK QUEST DETAILS"
+        },
+        {
+            "id": "B08B1E9E7A829E27BEFCF5BDC470CD86F4E9065F",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-17T15:00:01Z",
+            "startTime": "2022-02-17T17:00:00Z",
+            "endTime": "2022-02-17T23:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 110
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 5,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 5 CTX</b> on Automata’s ContextFree to earn 110 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 5 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 110 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-5 MP)"
+        },
+        {
+            "id": "A030EECCD8BD9F38ACF5FE31EE732E1CD3170587",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-17T23:00:01Z",
+            "startTime": "2022-02-18T04:00:00Z",
+            "endTime": "2022-02-18T11:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 83
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 7,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 7 CTX</b> on Automata’s ContextFree to earn 83 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 7 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 83 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-7 MP)"
+        },
+        {
+            "id": "5CC7AB3805FB3DEE17AA953CA2427BCF58716A9B",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-18T11:00:01Z",
+            "startTime": "2022-02-18T16:00:00Z",
+            "endTime": "2022-02-18T23:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 5
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 4,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 4 CTX</b> on Automata’s ContextFree to earn 5 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 4 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 5 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/5.png",
+            "btnText": "DEFEAT MONSTER (-4 MP)"
+        },
+        {
+            "id": "A83A584420321910D564EE6EB4398EEF8A9CE2DC",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-18T23:00:01Z",
+            "startTime": "2022-02-19T01:00:00Z",
+            "endTime": "2022-02-19T11:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 153
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 5,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 5 CTX</b> on Automata’s ContextFree to earn 153 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 5 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 153 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/2.png",
+            "btnText": "DEFEAT MONSTER (-5 MP)"
+        },
+        {
+            "id": "2B95D5938C6255FF1DD431C664D02CC8C2FE2F01",
+            "type": "random",
+            "checker": "crossChainTransfer",
+            "appearTime": "2022-02-19T11:00:01Z",
+            "startTime": "2022-02-19T13:00:00Z",
+            "endTime": "2022-02-19T17:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 0
+                },
+                "mp": {
+                    "value": 4
+                }
+            },
+            "cost": {
+                "token": {
+                    "value": 2,
+                    "exactly": true
+                }
+            },
+            "title": "Hope Burns Bright",
+            "desc": "Only those whose will is strong can find the path. Shine a light into the corners of the Forest which grows with every new area being discovered.",
+            "about": [
+                "Transfer <b>exactly 2 CTX</b> from Ropsten Testnet to ContextFree to earn 4 MP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the Ropsten Testnet. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png')\">",
+                "Set up your Metamask Wallet with your game address.",
+                "Visit <a target='_blank' href='https://cf-bridge.ata.network/'>chain bridge</a>, select 'ERC20 to Native', and transfer exactly 2 CTX to your Substrate address. Learn more about using the Automata Token Bridge with our user <a target='_blank' href='https://docs.ata.network/canarynet/userguide/token-bridge/#transfer-erc20-token-to-native-token'>guide</a>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/erc2native.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/erc2native.png')\">",
+                "Receive 4 MP once the transfer has been confirmed!"
+            ],
+            "avatar": "/static/avatar/5.png",
+            "btnText": "CHECK QUEST DETAILS"
+        },
+        {
+            "id": "685EC605F426D0CB509F63F97B5A91F82771ABA6",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-19T17:00:01Z",
+            "startTime": "2022-02-19T18:00:00Z",
+            "endTime": "2022-02-19T23:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 205
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 8,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 8 CTX</b> on Automata’s ContextFree to earn 205 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 8 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 205 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-8 MP)"
+        },
+        {
+            "id": "403F0B428073B3229327BFF7F016D5BA4F479D86",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-19T23:00:01Z",
+            "startTime": "2022-02-20T01:00:00Z",
+            "endTime": "2022-02-20T11:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 273
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 7,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 7 CTX</b> on Automata’s ContextFree to earn 273 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 7 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 273 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/2.png",
+            "btnText": "DEFEAT MONSTER (-7 MP)"
+        },
+        {
+            "id": "04A39E33766C4C06978BE646F1DE514E8037A1C0",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-20T11:00:01Z",
+            "startTime": "2022-02-20T13:00:00Z",
+            "endTime": "2022-02-20T22:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 215
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 4,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 4 CTX</b> on Automata’s ContextFree to earn 215 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 4 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 215 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/1.png",
+            "btnText": "DEFEAT MONSTER (-4 MP)"
+        },
+        {
+            "id": "BE03C19F7C074634A77D60F54D3F09D9F18E3D90",
+            "type": "random",
+            "checker": "crossChainTransfer",
+            "appearTime": "2022-02-20T22:00:01Z",
+            "startTime": "2022-02-21T03:00:00Z",
+            "endTime": "2022-02-21T12:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 0
+                },
+                "mp": {
+                    "value": 5
+                }
+            },
+            "cost": {
+                "token": {
+                    "value": 4,
+                    "exactly": true
+                }
+            },
+            "title": "Hope Burns Bright",
+            "desc": "Only those whose will is strong can find the path. Shine a light into the corners of the Forest which grows with every new area being discovered.",
+            "about": [
+                "Transfer <b>exactly 4 CTX</b> from Ropsten Testnet to ContextFree to earn 5 MP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the Ropsten Testnet. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png')\">",
+                "Set up your Metamask Wallet with your game address.",
+                "Visit <a target='_blank' href='https://cf-bridge.ata.network/'>chain bridge</a>, select 'ERC20 to Native', and transfer exactly 4 CTX to your Substrate address. Learn more about using the Automata Token Bridge with our user <a target='_blank' href='https://docs.ata.network/canarynet/userguide/token-bridge/#transfer-erc20-token-to-native-token'>guide</a>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/erc2native.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/erc2native.png')\">",
+                "Receive 5 MP once the transfer has been confirmed!"
+            ],
+            "avatar": "/static/avatar/3.png",
+            "btnText": "CHECK QUEST DETAILS"
+        },
+        {
+            "id": "6474BEA0C9D3904A3103CFDABFA5EEAB8A954924",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-21T12:00:01Z",
+            "startTime": "2022-02-21T14:00:00Z",
+            "endTime": "2022-02-21T23:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 213
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 14,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 14 CTX</b> on Automata’s ContextFree to earn 213 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 14 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 213 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/4.png",
+            "btnText": "DEFEAT MONSTER (-14 MP)"
+        },
+        {
+            "id": "1F0AEE84ACAEBB5AAEA8948EC1CE68C048E32938",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-21T23:00:01Z",
+            "startTime": "2022-02-22T01:00:00Z",
+            "endTime": "2022-02-22T07:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 68
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 4,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 4 CTX</b> on Automata’s ContextFree to earn 68 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 4 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 68 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-4 MP)"
+        },
+        {
+            "id": "7A8BA3B0CF68FD463B07E22824A1E52A222E5604",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-22T07:00:01Z",
+            "startTime": "2022-02-22T09:00:00Z",
+            "endTime": "2022-02-22T15:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 140
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 7,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 7 CTX</b> on Automata’s ContextFree to earn 140 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 7 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 140 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-7 MP)"
+        },
+        {
+            "id": "0F3CEEA770782DE82B55F4A030A74D95CEAA1A10",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-22T15:00:01Z",
+            "startTime": "2022-02-22T17:00:00Z",
+            "endTime": "2022-02-22T23:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 160
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 3,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 3 CTX</b> on Automata’s ContextFree to earn 160 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 3 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 160 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/5.png",
+            "btnText": "DEFEAT MONSTER (-3 MP)"
+        },
+        {
+            "id": "0C427533F377ADBF9C222205B261D1EE4761CADB",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-22T23:00:01Z",
+            "startTime": "2022-02-23T01:00:00Z",
+            "endTime": "2022-02-23T09:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 123
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 7,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 7 CTX</b> on Automata’s ContextFree to earn 123 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 7 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 123 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/4.png",
+            "btnText": "DEFEAT MONSTER (-7 MP)"
+        },
+        {
+            "id": "EE8EBE7021762F61A98260A9564A637B3E7B2598",
+            "type": "random",
+            "checker": "crossChainTransfer",
+            "appearTime": "2022-02-23T09:00:01Z",
+            "startTime": "2022-02-23T10:00:00Z",
+            "endTime": "2022-02-23T12:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 0
+                },
+                "mp": {
+                    "value": 8
+                }
+            },
+            "cost": {
+                "token": {
+                    "value": 2,
+                    "exactly": true
+                }
+            },
+            "title": "Hope Burns Bright",
+            "desc": "Only those whose will is strong can find the path. Shine a light into the corners of the Forest which grows with every new area being discovered.",
+            "about": [
+                "Transfer <b>exactly 2 CTX</b> from Ropsten Testnet to ContextFree to earn 8 MP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the Ropsten Testnet. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png')\">",
+                "Set up your Metamask Wallet with your game address.",
+                "Visit <a target='_blank' href='https://cf-bridge.ata.network/'>chain bridge</a>, select 'ERC20 to Native', and transfer exactly 2 CTX to your Substrate address. Learn more about using the Automata Token Bridge with our user <a target='_blank' href='https://docs.ata.network/canarynet/userguide/token-bridge/#transfer-erc20-token-to-native-token'>guide</a>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/erc2native.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/erc2native.png')\">",
+                "Receive 8 MP once the transfer has been confirmed!"
+            ],
+            "avatar": "/static/avatar/3.png",
+            "btnText": "CHECK QUEST DETAILS"
+        },
+        {
+            "id": "D5A5B374391C82CCC3753D0E8782418D0EA52DBA",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-23T12:00:01Z",
+            "startTime": "2022-02-23T14:00:00Z",
+            "endTime": "2022-02-23T18:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 90
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 6,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 6 CTX</b> on Automata’s ContextFree to earn 90 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 6 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 90 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-6 MP)"
+        },
+        {
+            "id": "0EAD5076972D0979A599543D8C4CF4C8BC8C8E3D",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-23T18:00:01Z",
+            "startTime": "2022-02-23T19:00:00Z",
+            "endTime": "2022-02-23T23:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 150
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 9,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 9 CTX</b> on Automata’s ContextFree to earn 150 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 9 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 150 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-9 MP)"
+        },
+        {
+            "id": "2F18C9EAFD5CD0BA5E61ADE7DDB667B2E3200B7A",
+            "type": "random",
+            "checker": "crossChainTransfer",
+            "appearTime": "2022-02-23T23:00:01Z",
+            "startTime": "2022-02-24T03:00:00Z",
+            "endTime": "2022-02-24T22:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 0
+                },
+                "mp": {
+                    "value": 5
+                }
+            },
+            "cost": {
+                "token": {
+                    "value": 6,
+                    "exactly": true
+                }
+            },
+            "title": "Hope Burns Bright",
+            "desc": "Only those whose will is strong can find the path. Shine a light into the corners of the Forest which grows with every new area being discovered.",
+            "about": [
+                "Transfer <b>exactly 6 CTX</b> from Ropsten Testnet to ContextFree to earn 5 MP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the Ropsten Testnet. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png')\">",
+                "Set up your Metamask Wallet with your game address.",
+                "Visit <a target='_blank' href='https://cf-bridge.ata.network/'>chain bridge</a>, select 'ERC20 to Native', and transfer exactly 6 CTX to your Substrate address. Learn more about using the Automata Token Bridge with our user <a target='_blank' href='https://docs.ata.network/canarynet/userguide/token-bridge/#transfer-erc20-token-to-native-token'>guide</a>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/erc2native.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/erc2native.png')\">",
+                "Receive 5 MP once the transfer has been confirmed!"
+            ],
+            "avatar": "/static/avatar/3.png",
+            "btnText": "CHECK QUEST DETAILS"
+        },
+        {
+            "id": "A787B3492E4BAE049915F141A2463B7DF3EC74C2",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-24T22:00:01Z",
+            "startTime": "2022-02-25T02:00:00Z",
+            "endTime": "2022-02-25T13:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 200
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 4,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 4 CTX</b> on Automata’s ContextFree to earn 200 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 4 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 200 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/1.png",
+            "btnText": "DEFEAT MONSTER (-4 MP)"
+        },
+        {
+            "id": "7ECC956F673B90D24910E9AF7D535BCDFC8795AD",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-25T13:00:01Z",
+            "startTime": "2022-02-25T15:00:00Z",
+            "endTime": "2022-02-25T23:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 333
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 6,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 6 CTX</b> on Automata’s ContextFree to earn 333 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 6 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 333 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/1.png",
+            "btnText": "DEFEAT MONSTER (-6 MP)"
+        },
+        {
+            "id": "491A7F46CBDA58789FF0FA4FF393AB3ABB170C68",
+            "type": "random",
+            "checker": "crossChainTransfer",
+            "appearTime": "2022-02-25T23:00:01Z",
+            "startTime": "2022-02-26T03:00:00Z",
+            "endTime": "2022-02-26T14:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 0
+                },
+                "mp": {
+                    "value": 7
+                }
+            },
+            "cost": {
+                "token": {
+                    "value": 3,
+                    "exactly": true
+                }
+            },
+            "title": "Hope Burns Bright",
+            "desc": "Only those whose will is strong can find the path. Shine a light into the corners of the Forest which grows with every new area being discovered.",
+            "about": [
+                "Transfer <b>exactly 3 CTX</b> from Ropsten Testnet to ContextFree to earn 7 MP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the Ropsten Testnet. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-Ropsten.png')\">",
+                "Set up your Metamask Wallet with your game address.",
+                "Visit <a target='_blank' href='https://cf-bridge.ata.network/'>chain bridge</a>, select 'ERC20 to Native', and transfer exactly 3 CTX to your Substrate address. Learn more about using the Automata Token Bridge with our user <a target='_blank' href='https://docs.ata.network/canarynet/userguide/token-bridge/#transfer-erc20-token-to-native-token'>guide</a>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/erc2native.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/erc2native.png')\">",
+                "Receive 7 MP once the transfer has been confirmed!"
+            ],
+            "avatar": "/static/avatar/4.png",
+            "btnText": "CHECK QUEST DETAILS"
+        },
+        {
+            "id": "521A00DB120B1FEBB4B6C5CE26F9817B1EF17610",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-26T14:00:01Z",
+            "startTime": "2022-02-26T15:00:00Z",
+            "endTime": "2022-02-26T23:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 500
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 7,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 7 CTX</b> on Automata’s ContextFree to earn 500 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 7 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 500 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/3.png",
+            "btnText": "DEFEAT MONSTER (-7 MP)"
+        },
+        {
+            "id": "BB9B2FE2DBBE41DD4C3001177ABBF8B35B813435",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-26T23:00:01Z",
+            "startTime": "2022-02-27T01:00:00Z",
+            "endTime": "2022-02-27T12:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 1200
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 6,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 6 CTX</b> on Automata’s ContextFree to earn 1200 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 6 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 1200 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/4.png",
+            "btnText": "DEFEAT MONSTER (-6 MP)"
+        },
+        {
+            "id": "F058BCB80DD810325BA6E272DCB492983EDB373C",
+            "type": "random",
+            "checker": "simpleTransfer",
+            "appearTime": "2022-02-27T12:00:01Z",
+            "startTime": "2022-02-27T13:00:00Z",
+            "endTime": "2022-02-27T22:00:00Z",
+            "reward": {
+                "xp": {
+                    "value": 1500
+                }
+            },
+            "cost": {
+                "mp": {
+                    "value": 7,
+                    "exactly": true
+                }
+            },
+            "title": "After the Ashes",
+            "desc": "The bearer of the light may enter and leave the Dark Forest at will, and shall for no reason be perturbed, harmed or harassed in any way or manner.",
+            "about": [
+                "Transfer <b>exactly 7 CTX</b> on Automata’s ContextFree to earn 1500 EXP."
+            ],
+            "steps": [
+                "Get CTX tokens from the <a target='_blank' href='https://faucet.ata.network'>Automata Faucet</a> by choosing the ContextFree network. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/faucet-ContextFree.png')\">",
+                "Visit the <a target='_blank' href='https://dashboard.ata.network/?rpc=wss%3A%2F%2Fcf-api.ata.network#/explorer'>Automata dashboard</a> and make sure you’re on the ContextFree Network to transfer exactly 7 CTX to <span class='copy-text' title='click to copy' onclick=\"window.copyText('a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY')\">this address</span>. <img class='quest-detail-img' title='Click for larger image' src='https://canaryquest-api.ata.network/static/details/simple-transfer-random.png' onclick=\"window.showBigImg('https://canaryquest-api.ata.network/static/details/simple-transfer-random.png')\">",
+                "Receive 1500 EXP once the transfer has been confirmed!"
+            ],
+            "targetAccount": "a7Qhs9kemxhhEAoaBxEV84cv1ZHTJJFidskh9kWwKfi8zmVPY",
+            "avatar": "/static/avatar/5.png",
+            "btnText": "DEFEAT MONSTER (-7 MP)"
+        }
+    ]
+}

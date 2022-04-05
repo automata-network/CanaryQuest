@@ -1,0 +1,19 @@
+{
+    "PORT": 4000,
+    "SQLITE_PATH": "./sqlite.db",
+    "MAIN_NODE": "",
+    "QUESTS_CONFIG_URL": "",
+
+    "TOKEN_SIGN_KEY": "",
+    "RECAPTCHA_TOKEN": "",
+    "RSA_PRIVATE_KEY": "",
+    "SUBSTRATE_FUND_POOL": "",
+    "SUBSTRATE_FUND_POOL_FS": "",
+
+    "MP_LIMIT_DAILY": 10,
+    "BASE_ATTACK": 100,
+    "CRITICAL_CHANCE_PER_DEX": 0.05,
+    "ADDITIONAL_EXP_PER_STR": 0.05,
+    "EXP_LIMIT_IN_CAROUSEL": 200,
+    "SHARE_EXP": 5
+}

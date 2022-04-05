@@ -1,0 +1,54 @@
+<div class="u-card" ref="card">
+    <u-box v-if="showFlip"
+           class="side"
+           :width="remToPx(3.69)"
+           :height="remToPx(4.89)"
+           :box-bg-color="colors[type].boxBg"
+           :content-bg-color="colors[type].contentBg">
+        <div :class="`${type}-quest-back`">
+            <div v-if="completed" class="timer">COMPLETED</div>
+            <div v-else-if="type !== 'daily' && unlockText !== ''">
+                <div class="unlock-label">UNLOCKS IN:</div>
+                <div class="timer">{{ unlockText }}</div>
+            </div>
+        </div>
+    </u-box>
+    <u-box :class="`side back ${showFlip ? 'rotate': ''}`"
+           :width="remToPx(3.69)"
+           :height="remToPx(4.89)"
+           :box-bg-color="colors[type].boxBg"
+           :content-bg-color="colors[type].contentBg">
+        <template v-if="info">
+            <u-box :width="remToPx(2.99)"
+                   :height="remToPx(1.69)"
+                   :box-bg-color="colors[type].avatarBoxBg"
+                   :border-color="colors[type].avatarBorder">
+                <img class="quest-avatar" :src="`${baseUrl}${info.avatar}`">
+            </u-box>
+            <slot v-if="customContent"></slot>
+            <template v-else>
+                <div class="title">{{info.title}}</div>
+                <div class="desc">{{info.desc}}</div>
+                <div class="reward">
+                    <span class="label">MISSION REWARDS: </span>
+                    <span v-for="key in Object.keys(info.reward)"
+                          :key="key"
+                          :class="key">
+                    +{{info.reward[key].value}} {{key.toUpperCase()}}
+                    <span v-if="info.reward[key].unit" style="color: #B6B6B6"> / <span :class="info.reward[key].unit.type">{{info.reward[key].unit.value}} {{info.reward[key].unit.type.toUpperCase()}}</span></span>
+                </span>
+                </div>
+            </template>
+            <u-box class="button"
+                   :width="remToPx(2.99)"
+                   :height="remToPx(0.38)"
+                   border-width="3px"
+                   :border-color="colors[type].btnBorder"
+                   :box-bg-color="colors[type].btnBoxBg"
+                   :content-bg-color="colors[type].btnContentBg"
+                   @click.native="onButtonClick">
+                <div class="text">{{info.btnText.toUpperCase()}}</div>
+            </u-box>
+        </template>
+    </u-box>
+</div>

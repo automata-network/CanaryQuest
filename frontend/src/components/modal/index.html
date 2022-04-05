@@ -1,0 +1,6 @@
+<div class="u-modal" v-if="showModal">
+    <div class="mask bg-show" ref="mask" @click.self.stop="onMaskClick" @touchmove.stop.prevent @mousewheel.stop.prevent></div>
+    <div :class="`content content-show-${type}`" ref="content">
+        <slot></slot>
+    </div>
+</div>

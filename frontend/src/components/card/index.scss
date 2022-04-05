@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+.flip {
+    transform: translateZ(-1px) rotateY(180deg);
+}
+
+.u-card {
+    @include size(3.69rem, 4.89rem);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+
+    .side {
+        @include absolute;
+        transform: translateZ(1px);
+        backface-visibility: hidden;
+    }
+
+    .unlock-label {
+        text-align: center;
+        font-size: 0.35rem;
+    }
+
+    .timer {
+        text-align: center;
+        font-size: 0.55rem;
+    }
+
+    .rotate {
+        transform: translateZ(-1px) rotateY(180deg);
+    }
+
+    .back {
+        & > .content {
+            font-weight: 500;
+            font-size: 0.24rem;
+            padding: 0.28rem;
+            letter-spacing: -0.005rem;
+            text-align: center;
+            @include flex(column, space-between, center);
+        }
+
+        .title {
+            width: 100%;
+            @include ellipsis;
+        }
+
+        .desc {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            font-size: 0.18rem;
+            line-height: 0.2rem;
+            color: #B6B6B6;
+            letter-spacing: 0;
+        }
+
+        .button {
+            cursor: pointer;
+
+            .text {
+                font-size: 0.18rem;
+                padding-top: 0.04rem;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        .reward {
+            width: 100%;
+            color: #B6B6B6;
+            font-size: 0.18rem;
+            letter-spacing: 0;
+
+            .label {
+                color: #FFE8AC;
+            }
+
+            .xp {
+                color: #8AFF6D;
+            }
+
+            .mp {
+                color: #9CE7FF;
+            }
+
+            .dmg {
+                color: #FF5555;
+            }
+        }
+    }
+
+    .daily-quest-back {
+        @include size;
+        @include flex(column, center, center);
+        @include bg-img("~@/assets/imgs/quests/back-1.png");
+    }
+
+    .random-quest-back {
+        @include size;
+        @include flex(column, center, center);
+        @include bg-img("~@/assets/imgs/quests/back-2.png");
+    }
+
+    .raid-quest-back {
+        @include size;
+        @include flex(column, center, center);
+        @include bg-img("~@/assets/imgs/quests/back-3.png");
+    }
+
+    .quest-avatar {
+        @include size;
+        object-fit: cover;
+    }
+}

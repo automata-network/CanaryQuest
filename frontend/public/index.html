@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Join this great adventure!">
+    <meta name="twitter:description" content="@2021 ContextFree, prod. by Automata Network.">
+    <meta name="twitter:image" content="https://canaryquest-api.ata.network/static/poster.png">
+
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="preload" href="./static/fonts/Pixellari.ttf" as="font" type="font/truetype" crossorigin>
+    <link rel="preload" href="./static/imgs/bg.png" as="image">
+    <link rel="preload" href="./static/imgs/title.png" as="image">
+    <link rel="preload" href="./static/imgs/overlay.png" as="image">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src="./static/setting.js"></script>
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LD7J6ETVB3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LD7J6ETVB3');
+</script>
+<body>
+    <noscript>
+        <strong>We"re sorry but <%= htmlWebpackPlugin.options.title %> doesn"t work properly without JavaScript enabled.
+            Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+</html>
